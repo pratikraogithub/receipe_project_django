@@ -1,0 +1,54 @@
+{% extends "home\base.html" %}
+
+{% block title %}login{% endblock title %}
+
+{% block start %}
+<div class="container d-flex align-items-center justify-content-center" style="height: 100vh;">
+    <div class="login-container">
+        <form>
+            <!-- Email input -->
+            <div class="form-outline mb-4">
+                <input type="email" id="form2Example1" class="form-control" placeholder="Email address" />
+                <label class="form-label" for="form2Example1">Email address</label>
+            </div>
+
+            <!-- Password input -->
+            <div class="form-outline mb-4">
+                <input type="password" id="form2Example2" class="form-control" placeholder="Password" />
+                <label class="form-label" for="form2Example2">Password</label>
+            </div>
+
+            <!-- 2 column layout for Remember me and Forgot password -->
+            
+
+            <!-- Submit button -->
+            <button type="submit" class="btn btn-primary btn-block mb-4 w-100">Sign up</button>
+
+            <!-- Register link -->
+            <div class="text-center">
+                <p>Already have an account <a href="/login/">Login</a></p>
+
+                <!-- Social login buttons -->
+                <p>or sign up with:</p>
+                <div class="social-buttons d-flex justify-content-center">
+                    <button type="button" class="btn btn-link btn-floating mx-1">
+                        <i class="fab fa-facebook-f"></i>
+                    </button>
+
+                    <button type="button" class="btn btn-link btn-floating mx-1">
+                        <i class="fab fa-google"></i>
+                    </button>
+
+                    <button type="button" class="btn btn-link btn-floating mx-1">
+                        <i class="fab fa-twitter"></i>
+                    </button>
+
+                    <button type="button" class="btn btn-link btn-floating mx-1">
+                        <i class="fab fa-github"></i>
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+{% endblock start %}
